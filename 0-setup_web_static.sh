@@ -39,7 +39,7 @@ HOME_PAGE="<!DOCTYPE html>
 </html>
 "
 
-if [[ "$(which nginx | grep -c nginx)" == '0' ]]; then
+if [[ "$(command -v nginx | grep -c nginx)" == '0' ]]; then
     apt-get update
     apt-get -y install nginx
 fi
